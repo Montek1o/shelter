@@ -1,0 +1,22 @@
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 443px;
+}
+
+.nav__link {
+  @extend %font-second;
+  color: $color-text-2;
+  list-style: none;
+  transition: all .3s ease;
+  cursor: pointer;
+
+  &-active {
+    color: $color-link;
+    border-bottom: 3px solid $color-main;
+  }
+
+  &:hover {
+    color: $color-link;
+  }
+}
