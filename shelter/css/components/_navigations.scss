@@ -5,6 +5,7 @@
 }
 
 .nav__link {
+  @include font(1.5rem, 2.4rem);
   @extend %font-second;
   color: $color-text-2;
   list-style: none;

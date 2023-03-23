@@ -1,9 +1,9 @@
-body {
-  font-family: Georgia, sans-serif;
+.button, body {
+  font-family: "Georgia";
 }
 
-.nav__link, .logo__subtitle {
-  font-family: Arial, sans-serif;
+.only__text, .nav__link, .logo__subtitle {
+  font-family: "Arial";
 }
 
 * {
@@ -19,6 +19,14 @@ html {
 
 body {
   font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 4.4rem;
+  line-height: 5.72rem;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
 }
 
 .logo {
@@ -53,14 +61,29 @@ body {
   transition: all 0.3s ease;
 }
 
+.button {
+  background-color: rgb(241, 205, 179);
+  color: rgb(41, 41, 41);
+  border: none;
+  border-radius: 100px;
+  font-size: 1.7rem;
+  line-height: 130%;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.06em;
+}
+
 .wrapper {
-  max-width: 1220px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .header {
   padding-top: 30px;
-  background-color: gray;
+  background: url(/img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .header__wrapper {
@@ -76,6 +99,10 @@ body {
 }
 
 .nav__link {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-style: normal;
   color: rgb(205, 205, 205);
   list-style: none;
   transition: all 0.3s ease;
@@ -87,4 +114,47 @@ body {
 }
 .nav__link:hover {
   color: rgb(250, 250, 250);
+}
+
+.only {
+  margin-top: -90px;
+  background: url(/img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.only__wrapper {
+  padding-top: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.only__content {
+  padding-top: 163px;
+  max-width: 460px;
+}
+
+.only__title {
+  max-width: 310px;
+}
+
+.only__text {
+  padding: 42px 0;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(205, 205, 205);
+}
+
+.only__button {
+  padding: 15px 45px;
+}
+
+.only__img {
+  background: url(/img/puppy.png);
+  background-size: auto;
+  width: 698px;
+  height: 728px;
 }/*# sourceMappingURL=style.css.map */

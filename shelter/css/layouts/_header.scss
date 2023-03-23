@@ -1,6 +1,9 @@
 .header {
   padding-top: 30px;
-  background-color: gray;
+  background: url(/img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .header__wrapper {

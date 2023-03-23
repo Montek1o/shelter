@@ -1,0 +1,9 @@
+.button {
+  background-color: $color-main;
+  color: $color-text-button;
+  border: none;
+  border-radius: 100px;
+  @include font(1.7rem, 130%);
+  letter-spacing: 0.06em;
+  @extend %font-first;
+}
