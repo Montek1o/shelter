@@ -1,0 +1,53 @@
+.footer {
+  padding-top: 40px;
+  background: url(/img/footer-background.png) center no-repeat;
+  background-size: cover;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__contacts {
+  padding: 16px 0 60px;
+  max-width: 279px;
+}
+
+.footer__locations {
+  padding: 16px 0 60px;
+  max-width: 302px;
+}
+
+.footer__title {
+  @include font(3.5rem, 4.55rem);
+  letter-spacing: 0.06em;
+  color: #fff;
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+  @include font(2rem, 2.3rem);
+  letter-spacing: 0.06em;
+  color: $color-main;
+  cursor: pointer;
+
+  &__icon {
+    margin-right: 20px;
+  }
+
+  &__email {
+    margin: 42px 0 43px;
+  }
+
+  &__address1 {
+    margin: 32px 0 33px;
+  }
+}
+
+.footer__img {
+  background: url(/img/footer-puppy.png);
+  width: 300px;
+  height: 310px;
+}
