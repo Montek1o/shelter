@@ -18,3 +18,9 @@ h1 {
   @include font(4.4rem, 5.72rem);
   color: $color-text;
 }
+
+h2 {
+  @include font(3.5rem, 4.55rem);
+  letter-spacing: 0.06em;
+  color: $color-title;
+}

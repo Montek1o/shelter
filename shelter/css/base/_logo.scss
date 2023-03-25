@@ -16,7 +16,7 @@
   color: $color-main;
   @include font(3.2rem, 3.5rem);
   letter-spacing: 0.06em;
-  transition: all .3s ease;
+  @extend %transition;
 }
 
 .logo__subtitle {
@@ -26,5 +26,5 @@
   letter-spacing: 0.1em;
   padding-top: 10px;
   padding-left: 4px;
-  transition: all .3s ease;
+  @extend %transition;
 }

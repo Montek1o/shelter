@@ -2,8 +2,12 @@
   font-family: "Georgia";
 }
 
-.only__text, .nav__link, .logo__subtitle {
+.about__text, .only__text, .nav__link, .logo__subtitle {
   font-family: "Arial";
+}
+
+.pets__card, .nav__link, .pagginations, .button, .logo__subtitle, .logo__title {
+  transition: all 0.3s ease;
 }
 
 * {
@@ -29,6 +33,15 @@ h1 {
   color: rgb(255, 255, 255);
 }
 
+h2 {
+  font-size: 3.5rem;
+  line-height: 4.55rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  color: rgb(84, 84, 84);
+}
+
 .logo {
   cursor: pointer;
 }
@@ -46,7 +59,6 @@ h1 {
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.06em;
-  transition: all 0.3s ease;
 }
 
 .logo__subtitle {
@@ -58,19 +70,39 @@ h1 {
   letter-spacing: 0.1em;
   padding-top: 10px;
   padding-left: 4px;
-  transition: all 0.3s ease;
 }
 
 .button {
+  padding: 13px 43px;
   background-color: rgb(241, 205, 179);
   color: rgb(41, 41, 41);
-  border: none;
+  border: 2px solid rgb(241, 205, 179);
   border-radius: 100px;
   font-size: 1.7rem;
   line-height: 130%;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 0.06em;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(253, 220, 196);
+  border-color: rgb(253, 220, 196);
+}
+
+.pagginations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border: 2px solid rgb(241, 205, 179);
+  border-radius: 100px;
+  cursor: pointer;
+}
+.pagginations:hover {
+  background-color: rgb(253, 220, 196);
+  border-color: rgb(253, 220, 196);
 }
 
 .wrapper {
@@ -79,11 +111,10 @@ h1 {
 }
 
 .header {
-  padding-top: 30px;
-  background: url(/img/background.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
 }
 
 .header__wrapper {
@@ -105,7 +136,6 @@ h1 {
   font-style: normal;
   color: rgb(205, 205, 205);
   list-style: none;
-  transition: all 0.3s ease;
   cursor: pointer;
 }
 .nav__link-active {
@@ -117,11 +147,10 @@ h1 {
 }
 
 .only {
-  margin-top: -90px;
   background: url(/img/background.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .only__wrapper {
@@ -148,13 +177,117 @@ h1 {
   color: rgb(205, 205, 205);
 }
 
-.only__button {
-  padding: 15px 45px;
-}
-
 .only__img {
   background: url(/img/puppy.png);
   background-size: auto;
   width: 698px;
   height: 728px;
+}
+
+.about {
+  padding: 80px 0 99px;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 850px;
+}
+
+.about__img {
+  background: url(/img/about.png);
+  height: 408px;
+  width: 300px;
+}
+
+.about__content {
+  padding: 14px 0;
+  max-width: 430px;
+}
+
+.about__title {
+  max-width: 370px;
+}
+
+.about__text {
+  margin-top: 25px;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(76, 76, 76);
+}
+
+.pets {
+  padding: 80px 0 101px;
+  background-color: rgb(246, 246, 246);
+}
+
+.pets__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pets__title {
+  max-width: 400px;
+  padding-bottom: 59px;
+  text-align: center;
+}
+
+.pets__slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: normal;
+}
+
+.pets__cards {
+  display: flex;
+  -moz-column-gap: 90px;
+       column-gap: 90px;
+}
+
+.pets__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 9px;
+  width: 270px;
+  height: 435px;
+  background-color: rgb(250, 250, 250);
+}
+.pets__card:hover {
+  background-color: #fff;
+}
+.pets__card:hover .pets__card__button {
+  background-color: rgb(253, 220, 196);
+  border-color: rgb(253, 220, 196);
+}
+
+.pets__card__img {
+  border-radius: 9px 9px 0 0;
+}
+
+.pets__card__name {
+  margin: 30px 0;
+  font-size: 2rem;
+  line-height: 2.272rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.06em;
+  color: rgb(84, 84, 84);
+}
+
+.pets__card__button {
+  background-color: #fff;
+}
+
+.pets__arrow {
+  height: 6px;
+  width: 14px;
+}
+
+.pets__button {
+  margin-top: 59px;
 }/*# sourceMappingURL=style.css.map */

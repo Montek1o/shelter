@@ -1,0 +1,31 @@
+.about {
+  padding: 80px 0 99px;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 850px;
+}
+
+.about__img {
+  background: url(/img/about.png);
+  height: 408px;
+  width: 300px;
+}
+
+.about__content {
+  padding: 14px 0;
+  max-width: 430px;
+}
+
+.about__title {
+  max-width: 370px;
+}
+
+.about__text {
+  margin-top: 25px;
+  @include font(1.5rem, 2.4rem);
+  @extend %font-second;
+  color: $color-text-dark;
+}

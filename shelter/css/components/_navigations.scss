@@ -6,10 +6,10 @@
 
 .nav__link {
   @include font(1.5rem, 2.4rem);
-  @extend %font-second;
   color: $color-text-2;
+  @extend %font-second;
+  @extend %transition;
   list-style: none;
-  transition: all .3s ease;
   cursor: pointer;
 
   &-active {

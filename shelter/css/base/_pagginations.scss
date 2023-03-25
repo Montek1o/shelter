@@ -1,12 +1,11 @@
-.button {
-  padding: 13px 43px;
-  background-color: $color-main;
-  color: $color-text-button;
+.pagginations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
   border: 2px solid $color-main;
   border-radius: 100px;
-  @extend %font-first;
-  @include font(1.7rem, 130%);
-  letter-spacing: 0.06em;
   cursor: pointer;
   @extend %transition;
 

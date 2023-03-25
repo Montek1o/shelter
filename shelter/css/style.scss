@@ -7,6 +7,7 @@
 @import "base/base";
 @import "base/logo";
 @import "base/buttons";
+@import "base/pagginations";
 
 // Layouts
 @import "layouts/wrapper";
@@ -15,3 +16,5 @@
 // Components
 @import "components/navigations";
 @import "components/only";
+@import "components/about";
+@import "components/pets";
