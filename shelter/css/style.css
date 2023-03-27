@@ -158,7 +158,7 @@ h2 {
 
 .footer {
   padding-top: 40px;
-  background: url(/img/footer-background.png) center no-repeat;
+  background: url(../img/footer-background.png) center no-repeat;
   background-size: cover;
 }
 
@@ -212,7 +212,7 @@ h2 {
 }
 
 .footer__img {
-  background: url(/img/footer-puppy.png);
+  background: url(../img/footer-puppy.png);
   width: 300px;
   height: 310px;
 }
@@ -247,7 +247,7 @@ h2 {
 }
 
 .only {
-  background: url(/img/background.png);
+  background: url(../img/background.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -278,7 +278,7 @@ h2 {
 }
 
 .only__img {
-  background: url(/img/puppy.png);
+  background: url(../img/puppy.png);
   background-size: auto;
   width: 698px;
   height: 728px;
@@ -295,7 +295,7 @@ h2 {
 }
 
 .about__img {
-  background: url(/img/about.png);
+  background: url(../img/about.png);
   height: 408px;
   width: 300px;
 }
@@ -441,7 +441,7 @@ h2 {
 }
 
 .donation__img {
-  background-image: url(/img/dog.png);
+  background-image: url(../img/dog.png);
   margin-top: 11px;
   width: 505px;
   height: 261px;
