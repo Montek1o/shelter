@@ -44,6 +44,11 @@
   background-color: $color-main;
   text-decoration: none;
   cursor: pointer;
+  @extend %transition;
+
+  &:hover {
+    background-color: $color-hover;
+  }
 }
 
 .donation__text {

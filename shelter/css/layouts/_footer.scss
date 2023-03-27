@@ -31,7 +31,9 @@
   @include font(2rem, 2.3rem);
   letter-spacing: 0.06em;
   color: $color-main;
+  text-decoration: none;
   cursor: pointer;
+  @extend %transition;
 
   &__icon {
     margin-right: 20px;
@@ -43,6 +45,10 @@
 
   &__address1 {
     margin: 32px 0 33px;
+  }
+
+  &:hover {
+    color: $color-hover;
   }
 }
 

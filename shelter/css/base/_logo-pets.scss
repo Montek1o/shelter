@@ -1,0 +1,32 @@
+.logo {
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    .logo__title {
+      opacity: 0.7;
+    }
+
+    .logo__subtitle {
+      opacity: 0.7;
+    }
+  }
+}
+
+.logo__title {
+  color: $color-title;
+  @include font(3.2rem, 3.5rem);
+  letter-spacing: 0.06em;
+  @extend %transition;
+}
+
+.logo__subtitle {
+  color: $color-text-button;
+  @extend %font-second;
+  @include font(1.3rem, 1.5rem);
+  letter-spacing: 0.1em;
+  padding-top: 10px;
+  padding-left: 4px;
+  @extend %transition;
+}

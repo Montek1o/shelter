@@ -1,5 +1,13 @@
 .pagginations {
   display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 60px;
+  max-width: 340px;
+}
+
+.paggination__item {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 52px;
@@ -12,5 +20,28 @@
   &:hover {
     background-color: $color-hover;
     border-color: $color-hover;
+  }
+
+  &-disabled {
+    border-color: $color-text-2;
+    cursor: default;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $color-text-2;
+    }
+  }
+
+  &-active {
+    background-color: $color-main;
+    border-color: $color-main;
+    @include font(2rem, 2.3rem);
+    letter-spacing: 0.06em;
+    text-align: center;
+
+    &:hover {
+      background-color: $color-hover;
+      border-color: $color-hover;
+    }
   }
 }

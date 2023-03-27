@@ -11,19 +11,19 @@
 .nav__link {
   display: block;
   @include font(1.5rem, 2.4rem);
-  color: $color-text-2;
+  color: $color-title;
   @extend %font-second;
   @extend %transition;
   text-decoration: none;
   cursor: pointer;
 
   &-active {
-    color: $color-link;
+    color: $color-text-button;
     border-bottom: 3px solid $color-main;
     cursor: default;
   }
 
   &:hover {
-    color: $color-link;
+    color: $color-text-button;
   }
 }
